@@ -1,0 +1,14 @@
+package com.azoza.web.zuki.controller;
+
+import jakarta.ws.rs.GET;
+import jakarta.ws.rs.Path;
+import org.glassfish.jersey.server.mvc.Viewable;
+
+@Path("/productview")
+public class ProductViewController {
+    @GET
+    public Viewable index(){
+
+        return new Viewable("/frontend/productview");
+    }
+}
